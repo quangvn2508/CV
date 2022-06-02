@@ -1,0 +1,39 @@
+
+\documentclass[a4paper,13pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\usepackage[11pt]{moresize}
+
+
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+% For more, see https://en.wikibooks.org/wiki/LaTeX/Colors
+
+\usepackage{simplecv}
+\include{commands}
+
+\begin{document}
+
+% {\HUGE A huge text}
+\begin{center}
+    \textbf{\LARGE Quang Nguyen}{}
+\end{center}
+% \vspace{1mm}
+\begin{center}
+    \email{quangvn2508@gmail.com}\hspace{10mm}  
+    \linkedin{vinh-quang-nguyen} \hspace{10mm} 
+    \github{quangvn2508}
+\end{center}
+
+\import{sections/}{experience.tex}
+\import{sections/}{education.tex}
+\import{sections/}{projects.tex}
+\import{sections/}{awards.tex}
+\import{sections/}{skills.tex}
+% \import{sections/}{interest.tex}
+
+
+\end{document}
